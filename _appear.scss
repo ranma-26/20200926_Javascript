@@ -1,0 +1,14 @@
+.apper.up {
+  & .item {
+    transition: all 1.8s;
+    transform-origin: center center 20px;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  &.inview {
+    & .item {
+      opacity:1;
+      transform: none;
+    }
+  }
+}
